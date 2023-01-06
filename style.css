@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color: #234821;
+  --colorp: #285d25;
+  --bgmain: #f3fff2;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #222222;
+}
+.pp-top {
+  padding-top: 110px;
+}
+.pp-bottom {
+  padding-bottom: 100px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-45 {
+  margin-bottom: 45px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.pb-25{
+    padding-bottom: 25px;
+}
+/*----------------------------start navbar-----------------*/
+.navbar {
+  background-color: #fff;
+  box-shadow: 1px 6px 14px 16px #e8e8e8;
+}
+.nav-item {
+  margin-right: 38px;
+}
+.nav-item a {
+  color: #234821 !important;
+  font-size: 16px !important;
+  padding: 31px 10px;
+  position: relative;
+  font-weight: bold;
+}
+.nav-item a::before {
+  content: "";
+  background-color: #329d23;
+  bottom: 0;
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  right: 5px;
+  left: 2px;
+  transition: 0.4s;
+}
+.nav-item a:hover {
+  color: #329d23 !important;
+}
+.nav-item a:hover::before {
+  width: 100%;
+}
+.dropdown-menu {
+  width: 100px;
+}
+.dropdown :hover:ul {
+  display: block;
+}
+.btstmp {
+  background-color: #329d23;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  border: 0;
+  padding: 13px 33px 13px 27px;
+  border-radius: 6px;
+  font-size: 16px;
+  position: relative;
+}
+.btstmp a {
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+}
+.btstmp::before {
+  content: "";
+  background-color: #1936169d;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: transform 0.5s;
+  transition: all 0.3s ease-in;
+}
+.btstmp:hover::before {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .navbar {
+    padding: 20px 25px;
+  }
+  .navbar ul {
+    margin-top: 21px;
+  }
+  .navbar ul li {
+    text-align: center;
+  }
+  .navbar ul li a {
+    width: 100px;
+    margin: auto;
+  }
+  .collapse .btstmp {
+    display: block;
+    margin: auto;
+  }
+}
+/*----------------------end navbar-------------------*/
+
+/*----------------start carousel----------------------*/
+.carousel {
+  position: relative;
+}
+.carousel-item {
+  height: 100vh !important;
+}
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel .info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 64%;
+}
+.carousel .info h1 {
+  font-size: 90px;
+  font-weight: 700;
+}
+.carousel .info p {
+  font-size: 20px;
+  margin-bottom: 37px;
+}
+.carousel .info a {
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 11px 30px;
+  text-decoration: none;
+  border-radius: 9px;
+  margin-top: 16px;
+}
+.carousel-control-prev,
+carousel-control-next {
+  width: 3% !important;
+}
+.leftIcaon {
+  left: 0;
+  position: absolute;
+  border: 1px solid wheat;
+  padding: 50px 5px;
+  background-color: darkgrey;
+}
+.righticon {
+  right: 0;
+  position: absolute;
+  border: 1px solid wheat;
+  padding: 50px 5px;
+  background-color: darkgrey;
+}
+@media (max-width: 991px) {
+  .carousel .info h1 {
+    font-size: 30px;
+  }
+}
+/*---------------------end slider--------------------------*/
+
+/*-----------------strat about----------------------------*/
+
+.about-img img {
+  width: 100%;
+}
+.about-caption {
+  padding-left: 40px;
+}
+.about-title h1 {
+  color: var(--color);
+  font-size: 50px;
+  font-weight: 700;
+}
+.about-title p {
+  color: var(--colorp);
+  font-size: 18px;
+}
+/*----------end about------------------------------*/
+
+/*---------------------start services----------------*/
+.feature-img img {
+  height: 455px;
+}
+.single-service {
+  background-color: var(--bgmain);
+}
+.feature-caption {
+  color: var(--colorp);
+  padding: 60px 31px;
+  height: 455px;
+}
+.feature-caption span {
+  display: block;
+  padding-bottom: 30px;
+}
+.feature-caption h3 {
+  font-size: 22px;
+}
+.feature-caption p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+  .single-service .feature-caption {
+    height: 385px;
+  }
+  .feature-caption p {
+    margin-bottom: 40px;
+  }
+}
+/*---------------------end services----------------*/
