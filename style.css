@@ -112,7 +112,12 @@ body {
 /*----------------------------start navbar-----------------*/
 .navbar {
   background-color: #fff;
-  box-shadow: 1px 6px 14px 16px #e8e8e8;
+  z-index: 5;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .nav-item {
   margin-right: 38px;
@@ -178,6 +183,8 @@ body {
 /*----------------start carousel----------------------*/
 .carousel {
   position: relative;
+  margin-top: 103px;
+
 }
 .carousel-item {
   height: 100vh !important;
@@ -299,6 +306,9 @@ carousel-control-next {
 /*---------------------end services----------------*/
 
 /*--------------------start counter----------------*/
+.counter{
+    text-align: center;
+}
 .single-counter span,
 .single-counter p {
   display: inline-block;
