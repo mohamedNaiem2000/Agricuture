@@ -184,7 +184,7 @@ body {
 /*----------------start carousel----------------------*/
 .carousel {
   position: relative;
-  margin-top: 103px;
+  margin-top: 70px;
 }
 .carousel-item {
   height: 100vh !important;
