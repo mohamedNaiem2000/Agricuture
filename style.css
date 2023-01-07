@@ -208,7 +208,7 @@ body {
   color: white;
   font-size: 20px;
   border: 1px solid white;
-  padding: 11px 30px;
+  padding: 8px 13px;
   text-decoration: none;
   border-radius: 9px;
   margin-top: 16px;
@@ -518,10 +518,12 @@ text-decoration: none;
     background-color: rgba(50,157,35,0.06);
     display: inline-block;
 }
+.fotter-content1 ul{
+    padding-left: 0 !important;
+}
 .fotter-content1 ul li{
     list-style: none;
-    margin-bottom: 15px;
-    /* text-align: center; */
+    margin-bottom: 20px;
 }
 .fotter-content1 ul li a{
     color: var(--colorp);
@@ -529,6 +531,14 @@ text-decoration: none;
    font-size: 16px; 
 }.fotter-content1 .head h2{
     font-size: 22px;
+}
+.conul{
+    padding-left: 51px;
+}
+.copyright p{
+    font-size: 19px;
+    font-weight: 700;
+
 }
 
 
