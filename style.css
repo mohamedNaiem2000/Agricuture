@@ -147,6 +147,7 @@ body {
 @media (max-width: 991px) {
   .navbar {
     padding: 20px 25px;
+    z-index: 1;
   }
   .navbar ul {
     margin-top: 21px;
@@ -161,6 +162,12 @@ body {
   .collapse .btstmp {
     display: block;
     margin: auto;
+  }
+  .navbar .nav-item a{
+    padding: 15px 15px;
+  }
+  .nav-link .dropdown-menu{
+        width: 100px;
   }
 }
 /*----------------------end navbar-------------------*/
@@ -426,7 +433,7 @@ text-decoration: none;
     color: #329D23;
 }
 .tips-user .tips-caption .read:hover{
-    letter-spacing: 1.8px;
+    letter-spacing: 1.3px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -436,3 +443,11 @@ text-decoration: none;
       font-size: 25px;
   }
   }
+  /*------------------------end tips-------------------------*/
+
+  /*-------------------------start about3--------------------*/
+
+
+
+
+  
