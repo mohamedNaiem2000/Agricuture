@@ -108,14 +108,17 @@ body {
   transition: all 0.2s ease-in;
 }
 /*----------------------------start navbar-----------------*/
+.znav{
+  z-index: 999;
+}
 .navbar {
   background-color: #fff;
-  z-index: 999;
   border-bottom: 1px solid gray;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
 }
 .nav-item {
   margin-right: 38px;
@@ -183,7 +186,6 @@ body {
 .carousel {
   position: relative;
   margin-top: 103px;
-  /* z-index: 0; */
 }
 .carousel-item {
   height: 100vh !important;
