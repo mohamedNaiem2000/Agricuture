@@ -109,7 +109,7 @@ body {
 }
 /*----------------------------start navbar-----------------*/
 .znav{
-  z-index: 999;
+  z-index:999;
 }
 .navbar {
   background-color: #fff;
